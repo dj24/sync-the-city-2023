@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.module {
+    @apply p-1 h-20 w-20 rounded-full shadow bg-blue-800 text-center;
+}
 .lesson-node{
     @apply bg-primary w-8 h-8 rounded-full flex items-center justify-center text-white
 }

@@ -43,6 +43,10 @@ module.exports = {
       template: Path.resolve(__dirname, '../src/bank.html'),
       filename: 'bank.html', // Use [name] to dynamically generate filenames.
     }),
+    new HtmlWebpackPlugin({
+      template: Path.resolve(__dirname, '../src/game.html'),
+      filename: 'game.html', // Use [name] to dynamically generate filenames.
+    }),
   ],
   resolve: {
     alias: {
