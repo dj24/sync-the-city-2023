@@ -26,12 +26,14 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: Path.resolve(__dirname, '../src/index.html'),
       filename: 'index.html', // Use [name] to dynamically generate filenames.
-      chunks: ['index'], // Specify the entry point chunk for this HTML file.
     }),
     new HtmlWebpackPlugin({
       template: Path.resolve(__dirname, '../src/login.html'),
       filename: 'login.html', // Use [name] to dynamically generate filenames.
-      chunks: ['login'], // Specify the entry point chunk for this HTML file.
+    }),
+    new HtmlWebpackPlugin({
+      template: Path.resolve(__dirname, '../src/upgrades.html'),
+      filename: 'upgrades.html', // Use [name] to dynamically generate filenames.
     }),
   ],
   resolve: {
