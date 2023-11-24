@@ -36,6 +36,10 @@ module.exports = {
       filename: 'upgrades.html', // Use [name] to dynamically generate filenames.
     }),
     new HtmlWebpackPlugin({
+      template: Path.resolve(__dirname, '../src/test.html'),
+      filename: 'test.html', // Use [name] to dynamically generate filenames.
+    }),
+    new HtmlWebpackPlugin({
       template: Path.resolve(__dirname, '../src/bank.html'),
       filename: 'bank.html', // Use [name] to dynamically generate filenames.
     }),

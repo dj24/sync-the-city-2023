@@ -2,3 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+.lesson-node{
+    @apply bg-primary w-8 h-8 rounded-full flex items-center justify-center text-white
+}
+
+.lesson-node.active{
+    @apply border-solid border-2 bg-white border-[#e66c6c]
+}
+
+.lesson-node.inactive{
+    @apply bg-gray-400
+}
+
+.lesson-connector{
+    @apply bg-primary h-2 w-12 flex-1
+}
+
+.lesson-connector.inactive{
+    @apply bg-gray-400
+}
+
+button {
+    @apply bg-primary text-white px-4 rounded-lg py-1.5 font-semibold
+}
+
+p {
+    @apply text-gray-600 text-lg
+}
+
+.radio-card{
+    @apply p-4 border-2 border-gray-400 rounded-xl flex gap-4 text-gray-400 items-center
+}
+.radio-card .radio-dot{
+    @apply rounded-full bg-gray-300 w-4 h-4
+}
