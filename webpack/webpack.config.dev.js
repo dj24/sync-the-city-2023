@@ -39,20 +39,6 @@ module.exports = merge(common, {
         include: Path.resolve(__dirname, '../src'),
         loader: 'babel-loader',
       },
-      {
-        test: /\.s?css$/i,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: true,
-            },
-          },
-          'postcss-loader',
-          'sass-loader',
-        ],
-      },
     ],
   },
 });

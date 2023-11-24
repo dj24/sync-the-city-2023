@@ -28,10 +28,6 @@ module.exports = merge(common, {
         exclude: /node_modules/,
         use: 'babel-loader',
       },
-      {
-        test: /\.s?css/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
-      },
     ],
   },
 });
